@@ -1,13 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
     <link rel="icon" type="image/x-icon" href="./assets/concept.png">
+    <!-- google font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome CDN  -->
+    <script src="https://kit.fontawesome.com/4942528ff3.js" crossorigin="anonymous"></script>
+    <!-- Tailwind & daisyui CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'deep-green': '#ABEF5F',
+              },
+            },
+          },
+        }
+      </script>
+    
 
 </head>
-<body>
+<body class="font-manrope">
+    <!-- Header section  -->
+     <Header class="md:container mx-auto lg:px-16 bg-gradient-to-b from-gray-100">
+        <!-- navbar  -->
+         <nav class="">
+            <div class="navbar ">
+                <div class="navbar-start sm:navbar-end">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="space-x-1">
+                    <span><i class="fa-solid fa-arrow-right bg-deep-green rounded-full px-2 py-1 -rotate-45 text-2xl "></i></span>
+                  <a class="font-bold text-3xl">Rinterio</a>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="font-bold"><a>Home</a></li>
+                    <li class="text-gray-600"><a>Services</a></li>
+                    <li class="text-gray-600"><a>Portfolio</a></li>
+                    <li class="text-gray-600"><a>Blogs</a></li>
+                    <li class="text-gray-600"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4 ">
+                    <span><i class="fa-solid fa-magnifying-glass  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
+                    <span><i class="fa-solid fa-cart-shopping  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
+                  <div class=" px-4 py-2 bg-deep-green rounded-full font-bold space-x-1  ">
+                    <a class=" font-bold">Book Consult</a>
+                  <span><i class="fa-solid fa-arrow-right bg-black text-white rounded-full px-2 py-2 -rotate-45 "></i></span>
+                  </div>
+                </div>
+              </div>
+         </nav>
+         <!-- Banner section  -->
+         <div class="hero  min-h-screen">
+            <div class="grid hero-content text-center space-y-5">
+                <div class=" mx-auto">
+                    <img class="" src="./assets/banner.png" alt="">
+                </div>
+              <div class="space-y-3">
+                <h1 class="text-3xl lg:text-5xl font-bold">A barn house of this design has a <br>striking appearance</h1>
+                <p class="py-6">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                </p>
+                <div class=" w- lg:w-48 mx-auto px-4 py-2 bg-lime-300 rounded-full font-bold space-x-1  ">
+                    <a class=" font-bold">View Details</a>
+                  <span><i class="fa-solid fa-arrow-right bg-lime-600 text-white rounded-full px-2 py-2 -rotate-45 "></i></span>
+                  </div>
+              </div>
+            </div>
+          </div>
+     </Header>
+
+     <!-- Main Section  -->
+      <main class="md:container mx-auto">
+        <!-- we design  -->
+        <div class="hero bg-base-200 md:container mx-auto lg:px-16">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">Box Office News!</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <!-- Footer Section  -->
+       <Footer></Footer>
     
 </body>
 </html>
