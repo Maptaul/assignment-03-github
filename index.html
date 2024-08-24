@@ -81,9 +81,9 @@
                   </ul>
                 </div>
                 <div class="navbar-end space-x-4 ">
-                    <span><i class="fa-solid fa-magnifying-glass  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
-                    <span><i class="fa-solid fa-cart-shopping  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
-                  <div class=" px-4 py-2 bg-deep-green rounded-full font-bold space-x-1  ">
+                    <span><i class=" hidden md:block fa-solid fa-magnifying-glass  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
+                    <span><i class=" hidden md:block fa-solid fa-cart-shopping  bg-white text-black rounded-full px-3 py-2 text-xl "></i></span>
+                  <div class=" hidden md:block px-4 py-2 bg-deep-green rounded-full font-bold space-x-1 w-48 mx-auto ">
                     <a class=" font-bold">Book Consult</a>
                   <span><i class="fa-solid fa-arrow-right bg-black text-white rounded-full px-2 py-2 -rotate-45 "></i></span>
                   </div>
@@ -91,7 +91,7 @@
               </div>
          </nav>
          <!-- Banner section  -->
-         <div class="hero  min-h-screen">
+         <div class="hero  min-h-screen my-12">
             <div class="grid hero-content text-center space-y-5">
                 <div class=" mx-auto">
                     <img class="" src="./assets/banner.png" alt="">
@@ -111,19 +111,27 @@
      </Header>
 
      <!-- Main Section  -->
-      <main class="md:container mx-auto">
+      <main class="md:container mx-auto my-12">
         <!-- we design  -->
-        <div class="hero bg-base-200 md:container mx-auto lg:px-16">
+        <div class="hero bg-base-200  md:container mx-auto lg:px-16 lg:py-16">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <img
                 src="./assets/rectangle.png"
                 class=" rounded-lg shadow-2xl" />
-              <div class="lg:w-1/2">
+              <div class="lg:w-1/2 space-y-5 relative">
+                <img src="./assets/vector.png" alt=""
+                    class="absolute lg: -top-8 lg:-left-10 hidden md:block"
+          />
+                <div class=" px-4 py-2 bg-white rounded-full font-bold space-x-1 w-40 ">
+                  <span><i class="fa-solid fa-arrow-right   rounded-full px-2 py-2 "></i></span>
+                  <a class=" font-bold">About Us</a>
+                </div>
                 <h1 class="text-4xl font-bold">We design thoughtful, <br> liveable spaces</h1>
                 <p class="py-6">
                     The barn house captivates with its blend of rustic charm and 
                     modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
+                <!-- card -1  -->
                <div class="space-y-4">
                 <div class="flex space-x-4 bg-white rounded-xl px-5 py-5">
                     <img src="./assets/commercial.png" alt="">
@@ -132,24 +140,20 @@
                         <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
                     </div>
                 </div>
+                <!-- card -2  -->
                 <div class="flex space-x-4 bg-white rounded-xl px-5 py-5">
-                    <img src="./assets/commercial.png" alt="">
+                    <img src="./assets/residential.png" alt="">
                     <div class="">
-                        <h5 class="font-bold text-1xl">Commercial</h5>
-                        <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-                    </div>
-                </div>
-                <div class="flex space-x-4 bg-white rounded-xl px-5 py-5">
-                    <img src="./assets/commercial.png" alt="">
-                    <div class="">
-                        <h5 class="font-bold text-1xl">Commercial</h5>
+                        <h5 class="font-bold text-1xl">Residential</h5>
                         <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
                     </div>
                 </div>
                </div>
               </div>
             </div>
-          </div>
+        </div>
+        
+
       </main>
 
       <!-- Footer Section  -->
